@@ -2,6 +2,19 @@
 using SegundaPracticaSergioAlcazarMonedero.Models;
 using System.Data;
 
+#region PROCEDIMIENTOS
+//CREATE OR REPLACE PROCEDURE SP_INSERT_COMIC
+//(P_NOMBRE COMICS.NOMBRE%TYPE, P_IMAGEN COMICS.IMAGEN%TYPE, P_DESCRIPCION COMICS.DESCRIPCION%TYPE)
+//AS
+//      P_ID COMICS.IDCOMIC%TYPE;
+//BEGIN
+//      SELECT MAX(IDCOMIC) INTO P_ID FROM COMICS;
+//INSERT INTO COMICS VALUES(P_ID + 1, P_NOMBRE, P_IMAGEN, P_DESCRIPCION);
+
+//COMMIT;
+//END;
+#endregion
+
 namespace SegundaPracticaSergioAlcazarMonedero.Repositories
 {
     public class RepositoryOracle : IRepository
